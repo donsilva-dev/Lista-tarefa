@@ -28,12 +28,9 @@ class AddTaskField extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(width: 12),
-        SizedBox(
-          width: 58,
-          height: 58,
-          child: ElevatedButton(onPressed: onAdd, child: const Icon(Icons.add)),
-        ),
+        const SizedBox(width: 12,),
+        SizedBox(width: 58,height: 58,
+        child: ElevatedButton(onPressed: onAdd, child: const Icon(Icons.add)),)
       ],
     );
   }
