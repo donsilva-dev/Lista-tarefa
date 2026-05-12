@@ -21,17 +21,22 @@ class AddTaskField extends StatelessWidget {
               hintText: 'Digite uma tarefa',
               filled: true,
               fillColor: Colors.white,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(18),
-                borderSide: BorderSide.none,
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: BorderSide(color: Colors.grey.shade300),
+              ),
+
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: BorderSide(color: Colors.grey.shade400),
               ),
             ),
           ),
         ),
         const SizedBox(width: 12),
         SizedBox(
-          width: 58,
-          height: 58,
+          width: 50,
+          height: 50,
           child: ElevatedButton(onPressed: onAdd, child: const Icon(Icons.add)),
         ),
       ],

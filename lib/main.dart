@@ -1,4 +1,4 @@
-import 'package:animated_task_app/widgets/add_task_field.dart';
+import 'package:animated_task_app/screens/home_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'theme/app_theme.dart';
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: AddTaskField(controller: controller, onAdd: () {}),
+      home: const HomeScreen(),
     );
   }
 }
